@@ -3,7 +3,23 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Scanner;
+/*
+ * In this Style we have assumed the following constraints - 
+ * 
+ * 1 - Very small amount of primary memory, typically orders of magnitude
+ * smaller than the data that needs to be processed/generated.
+ * 
+ * 2 - No identifiers – i.e. no variable names or tagged memory addresses. All
+ * we have is memory that is addressable with numbers. 
+ * 
+ * I have used 1 variable to access the heap; and 2 for reading the input file and writing on the output file
+ */
 
+/**
+ * 
+ * @author Madhur J. Bajaj
+ *
+ */
 public class GoodOldTimes {
 	public static void main(String args[]) throws IOException {
 		Scanner readScanner = new Scanner(new FileReader("..\\stop_words.txt"));
@@ -19,7 +35,7 @@ public class GoodOldTimes {
 		// heap[4] - updated counter
 		// heap[5] - the file seek position
 		// heap[6] - used as boolean to check if the generated token exists in
-		//			 the intermediate
+		//	     the intermediate
 		// heap[7] - the string that need to be written back in the intermediate
 		// heap[8] - to store the count of the word in intermediate
 		// heap[9] - to store the next line from intermediate
@@ -129,21 +145,18 @@ public class GoodOldTimes {
 
 		/* Re-creating heap, this time as a 2D String array */
 		String newHeap[][] = new String[4][];
-		// newHeap[0] - an array of the top 25 words, in the format 'abc 005'
+		// newHeap[0] - an array of the top 25 words, in the format 'abc - 005'
 		newHeap[1] = new String[1]; // - An array of size 1, to store newHeap[0]
-		newHeap[1][0] = ""; // as a single string in the format 'abc 004,xyz
-							// 003,gef 002'
-		// newHeap[2] - to store the token and frequency that needs to be
-		// inserted
-		
+		newHeap[1][0] = ""; // as a single string in the format 
+				    // 'abc - 004,xyz - 003,gef - 002'
+		// newHeap[2] - to store the token and frequency that needs to be inserted
 		newHeap[3] = new String[4]; 
 		/* [3][0] is counter
 		 * [3][1] is boolean
 		 * [3][2] is file counter
 		 * [3][3] is file name */
 
-		/* Counter for the files, since we need to go thorough all the potential
-		 * 27 files. */
+		/* Counter for the files, since we need to go thorough all the potential 27 files. */
 		for (newHeap[3][2] = "0"; Integer.parseInt(newHeap[3][2]) <= 26; newHeap[3][2] = ""
 				+ (Integer.parseInt(newHeap[3][2]) + 1)) {
 			try {
