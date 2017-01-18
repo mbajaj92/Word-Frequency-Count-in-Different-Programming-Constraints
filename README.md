@@ -2,4 +2,5 @@ In this project I have implemented the code for Counting the frequency of all th
 This is inspired from the book "Excersizes in Programming Styles" written by Prof. Cristina Videira Lopes; which I have refferred extensively for this project. 
 
 Currently uploaded styles.
+
 Style1 - In this style you can't create identifiers except for FileReaders and FileWriters, and the RAM memory is very expensive; hence we try to load as less items as possible in the memory. The implementation for this is done in Java. 
