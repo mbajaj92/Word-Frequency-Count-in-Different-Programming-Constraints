@@ -1,5 +1,5 @@
 In this project I have implemented the code for Counting the frequency of all the Alpha-numerics in "Pride and Prejudice" and then printed the 25 most occuring words. The catch here is that every program has been written under various constraints. 
-This is inspired from the book "Excersizes in Programming Styles" written by Prof. Cristina Videira Lopes; which I have refferred extensively for this project. 
+This is inspired from the book "Excersizes in Programming Styles" written by Prof. Cristina Videira Lopes; which I have referred extensively for this project. 
 
 Currently uploaded styles.
 
