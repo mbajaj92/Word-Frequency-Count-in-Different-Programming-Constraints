@@ -259,7 +259,8 @@ public class GoForth {
 
 	public static void main(String args[]) throws IOException {
 		stack = new Stack<Object>();
-		stack.push(args[0]);
+		/*Removing command line dependency*/
+		stack.push(/*args[0]*/"..\\pride-and-prejudice.txt");
 		heap = new HashMap<String, Object>();
 		read_file();
 		generateTokens();
