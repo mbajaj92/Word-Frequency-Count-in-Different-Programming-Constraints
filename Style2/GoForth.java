@@ -259,7 +259,7 @@ public class GoForth {
 
 	public static void main(String args[]) throws IOException {
 		stack = new Stack<Object>();
-		stack.push(/*args[0]*/"..\\pride-and-prejudice.txt");
+		stack.push(args[0]);
 		heap = new HashMap<String, Object>();
 		read_file();
 		generateTokens();
