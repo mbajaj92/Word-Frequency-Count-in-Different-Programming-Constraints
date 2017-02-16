@@ -40,3 +40,7 @@ Pipeline2.java - Using Streams and concurrency, where as soon an element is proc
 						by one function, it is passed forward to the next function. This ensures 
 						that multiple functions are working concurrently on a different chunk 
 						in the same set of blocks; improving the performance speed at times.
+
+Style6 - CodeGolf
+In this programming style, the only aim is to reduce the number of characters required to
+execute the required behavior.
