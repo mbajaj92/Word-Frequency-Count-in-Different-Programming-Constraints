@@ -55,3 +55,8 @@ In this programming style, every function takes additional parameters, which den
 next function that needs to be called after the current function. This is used mostly in
 a-sync systems, where the main function passes on control to an auxilary function, and then
 provides the next function to be called, & moves on with its current execution concurrently.
+
+Style9 - TheOne
+In this programming style, we create an object abstraction; and bind all the functions to that
+object, such that any value that the function returns is saved in the generic value attribute 
+in the object.
