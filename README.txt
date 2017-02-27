@@ -49,3 +49,9 @@ Style7 - InfiniteMirror
 In this programming style, we are supposed to model the solution using Induction, where
 if the solution works for case n, then the same solution should work for case n+1. This 
 concept is primarily implemented using recursion.
+
+Style8 - KickForward
+In this programming style, every function takes additional parameters, which denotes the
+next function that needs to be called after the current function. This is used mostly in
+a-sync systems, where the main function passes on control to an auxilary function, and then
+provides the next function to be called, & moves on with its current execution concurrently.
