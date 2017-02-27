@@ -44,3 +44,8 @@ Pipeline2.java - Using Streams and concurrency, where as soon an element is proc
 Style6 - CodeGolf
 In this programming style, the only aim is to reduce the number of characters required to
 execute the required behavior.
+
+Style7 - InfiniteMirror
+In this programming style, we are supposed to model the solution using Induction, where
+if the solution works for case n, then the same solution should work for case n+1. This 
+concept is primarily implemented using recursion.
