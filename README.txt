@@ -35,11 +35,11 @@ Style5 - Pipeline
 In this programming style, all the procedures are in a pipeline, where the output produced 
 by one procedure is consumed by another. I have implemented this in 2 variations.
 Pipeline1.java - The traditional implementation where one block is processed completely 
-						and then passed on to the next function
+                        and then passed on to the next function
 Pipeline2.java - Using Streams and concurrency, where as soon an element is processed 
-						by one function, it is passed forward to the next function. This ensures 
-						that multiple functions are working concurrently on a different chunk 
-						in the same set of blocks; improving the performance speed at times.
+                        by one function, it is passed forward to the next function. This ensures 
+                        that multiple functions are working concurrently on a different chunk 
+                        in the same set of blocks; improving the performance speed at times.
 
 Style6 - CodeGolf
 In this programming style, the only aim is to reduce the number of characters required to
