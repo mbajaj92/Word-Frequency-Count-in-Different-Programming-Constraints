@@ -34,12 +34,12 @@ idempotent.
 Style5 - Pipeline
 In this programming style, all the procedures are in a pipeline, where the output produced 
 by one procedure is consumed by another. I have implemented this in 2 variations.
-Pipeline1.java - The traditional implementation where one block is processed completely 
-                        and then passed on to the next function
-Pipeline2.java - Using Streams and concurrency, where as soon an element is processed 
-                        by one function, it is passed forward to the next function. This ensures 
-                        that multiple functions are working concurrently on a different chunk 
-                        in the same set of blocks; improving the performance speed at times.
+Pipeline1.java - The traditional implementation where one block is processed completely
+                and then passed on to the next function
+Pipeline2.java - Using Streams and concurrency, where as soon an element is processed
+                by one function, it is passed forward to the next function. This ensures 
+                that multiple functions are working concurrently on a different chunk 
+                in the same set of blocks; improving the performance speed at times.
 
 Style6 - CodeGolf
 In this programming style, the only aim is to reduce the number of characters required to
@@ -60,3 +60,7 @@ Style9 - TheOne
 In this programming style, we create an object abstraction; and bind all the functions to that
 object, such that any value that the function returns is saved in the generic value attribute 
 in the object.
+
+Style10 - Things
+In this programming style; we have to implement the complete program by abstracting
+the relevant portions of the program into objects.
