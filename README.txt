@@ -64,3 +64,8 @@ in the object.
 Style10 - Things
 In this programming style; we have to implement the complete program by abstracting
 the relevant portions of the program into objects.
+
+Style11 - LetterBox
+In this programming style; we are supposed to emulate a asynchronous environment, where
+there are multiple classes performing their tasks concurrently, and are communicating via
+Messages.
