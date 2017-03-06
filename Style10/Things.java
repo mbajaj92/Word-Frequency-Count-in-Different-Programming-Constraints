@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author Madhur J. Bajaj
  *
  */
-public class SolutionStyle10 {
+public class Things {
 
 	/**
 	 * Abstract Class, to be used as a word manager. This class will read a
