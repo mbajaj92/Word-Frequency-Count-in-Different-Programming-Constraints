@@ -69,3 +69,7 @@ Style11 - LetterBox
 In this programming style; we are supposed to emulate a asynchronous environment, where
 there are multiple classes performing their tasks concurrently, and are communicating via
 Messages.
+
+Style12 - ClosedMaps
+In this programing Style, every function/object is saved in a HashMap or a dictionary, and 
+referred to via a String Identifier.
